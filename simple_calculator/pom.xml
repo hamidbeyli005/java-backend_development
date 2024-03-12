@@ -9,6 +9,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
-        <exec.mainClass>simple_calculator.Simple_calculator</exec.mainClass>
+        <exec.mainClass>main.Simple_calculator</exec.mainClass>
     </properties>
 </project>
