@@ -1,5 +1,7 @@
 package main;
 
+import util.Calculator;
+
 /**
  *
  * @author hamidhamidbayli
@@ -7,6 +9,7 @@ package main;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Calculator.calculate();
     }
+
 }
