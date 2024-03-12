@@ -23,17 +23,22 @@ public class Calculator {
 
         double result = 0;
 
-        if (operation == 1) {
-            result = MathUtil.add(a, b);
-        } else if (operation == 2) {
-            result = MathUtil.subtract(a, b);
-
-        } else if (operation == 3) {
-            result = MathUtil.multiply(a, b);
-        } else if (operation == 4) {
-            result = MathUtil.divide(a, b);
-        } else {
-            System.out.println("Operation is not valid");
+        switch (operation) {
+            case 1:
+                result = MathUtil.add(a, b);
+                break;
+            case 2:
+                result = MathUtil.subtract(a, b);
+                break;
+            case 3:
+                result = MathUtil.multiply(a, b);
+                break;
+            case 4:
+                result = MathUtil.divide(a, b);
+                break;
+            default:
+                System.out.println("Operation is not valid");
+                break;
         }
         System.out.println("result: " + result);
     }
