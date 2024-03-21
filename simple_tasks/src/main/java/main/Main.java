@@ -8,6 +8,7 @@ import util.EvenNumber;
 import util.NumberConverter;
 import util.NumberDigitSum;
 import util.PrimeNumber;
+import util.SwapVariables;
 import util.UserInputHandler;
 
 /**
@@ -24,11 +25,9 @@ public class Main {
 //        EvenNumber.printEvenNumbers(number);
 //        PrimeNumber.printPrimeCheckResult(number);
 //        PrimeNumber.findAndPrintPrimes(number);
-
-
-        NumberDigitSum.printSumOfDigits(number);
+//        NumberDigitSum.printSumOfDigits(number);
+        SwapVariables.swapAndPrintValues(17, 23);
 
     }
-
 
 }
