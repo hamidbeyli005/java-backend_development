@@ -3,9 +3,9 @@
  */
 package main;
 
+import java.util.Scanner;
+import util.EvenNumber;
 import util.NumberConverter;
-
-
 
 /**
  *
@@ -14,6 +14,9 @@ import util.NumberConverter;
 public class Main {
 
     public static void main(String[] args) {
-        NumberConverter.printNumberConversionResult();
+//        NumberConverter.printNumberConversionResult();
+
+        EvenNumber.printEvenNumbersInRange();
     }
+
 }
