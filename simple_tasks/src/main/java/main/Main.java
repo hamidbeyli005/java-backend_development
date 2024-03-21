@@ -13,6 +13,7 @@ import util.NumberReverse;
 import util.PrimeNumber;
 import util.StringPalindrome;
 import util.SwapVariables;
+import util.TextCleaner;
 import util.UserInputHandler;
 
 /**
@@ -38,7 +39,10 @@ public class Main {
 //        String str = UserInputHandler.getStringInputFromUser("String daxil edin: ");
 //        StringPalindrome.printPalindrome(str);
 
-        NumberReverse.printPalindromeCheck(141);
+//        NumberReverse.printPalindromeCheck(141);
+
+        String text = UserInputHandler.getStringInputFromUser("Text daxil edin: ");
+        TextCleaner.printCleanText(text);
 
 
 
