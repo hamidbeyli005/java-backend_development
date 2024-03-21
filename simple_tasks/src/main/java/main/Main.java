@@ -9,6 +9,7 @@ import util.EvenNumber;
 import util.FactorialCalculator;
 import util.NumberConverter;
 import util.NumberDigitSum;
+import util.NumberReverse;
 import util.PrimeNumber;
 import util.StringPalindrome;
 import util.SwapVariables;
@@ -34,9 +35,14 @@ public class Main {
 //        FactorialCalculator.printFactorialUsingLoop(number);
 //        FactorialCalculator.printFactorialUsingRecursion(number);
 
-        String str = UserInputHandler.getStringInputFromUser("String daxil edin: ");
+//        String str = UserInputHandler.getStringInputFromUser("String daxil edin: ");
+//        StringPalindrome.printPalindrome(str);
 
-        StringPalindrome.printPalindrome(str);
+        NumberReverse.printPalindromeCheck(141);
+
+
+
+
 
     }
 
