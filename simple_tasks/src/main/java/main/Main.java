@@ -21,6 +21,8 @@ public class Main {
 //        NumberConverter.printNumberConversionResult();
 //        EvenNumber.printEvenNumbers(num);
 //        PrimeNumber.printPrimeCheckResult(num);
+
+        PrimeNumber.findAndPrintPrimes(num);
     }
 
     public static int getIntegerInputFromUser(String msg) {

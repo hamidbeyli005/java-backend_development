@@ -24,17 +24,24 @@ public class PrimeNumber {
         return isPrime;
     }
 
-    public static void printPrimeCheckResult() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Eded daxil edin: ");
-        int number = sc.nextInt();
-        
+    public static void printPrimeCheckResult(int number) {
+
         boolean isPrime = PrimeNumber.checkIfPrime(number);
-        
+
         if (isPrime) {
             System.out.println(number + " sade ededdir.");
         } else {
             System.out.println(number + " sade eded deyil.");
         }
     }
+
+    public static void findAndPrintPrimes(int number) {
+        for (int i = 2; i <= number; i++) {
+            boolean bool = PrimeNumber.checkIfPrime(i);
+            if (bool) {
+                System.out.println(i);
+            }
+        }
+    }
+
 }
