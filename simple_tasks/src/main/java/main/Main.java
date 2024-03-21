@@ -6,6 +6,7 @@ package main;
 import java.util.Scanner;
 import util.DigitCounter;
 import util.EvenNumber;
+import util.FactorialCalculator;
 import util.NumberConverter;
 import util.NumberDigitSum;
 import util.PrimeNumber;
@@ -28,7 +29,10 @@ public class Main {
 //        PrimeNumber.findAndPrintPrimes(number);
 //        NumberDigitSum.printSumOfDigits(number);
 //        SwapVariables.swapAndPrintValues(17, 23);
-        DigitCounter.printDigitCount(number);
+//        DigitCounter.printDigitCount(number);
+
+        FactorialCalculator.printFactorialUsingLoop(number);
+        FactorialCalculator.printFactorialUsingRecursion(number);
 
     }
 
