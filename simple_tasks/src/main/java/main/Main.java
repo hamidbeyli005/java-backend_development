@@ -15,10 +15,18 @@ import util.PrimeNumber;
 public class Main {
 
     public static void main(String[] args) {
-//        NumberConverter.printNumberConversionResult();
-//        EvenNumber.printEvenNumbersInRange();
 
-            PrimeNumber.printPrimeCheckResult();
+        int num = getIntegerInputFromUser("Eded daxil edin: ");
+
+//        NumberConverter.printNumberConversionResult();
+//        EvenNumber.printEvenNumbers(num);
+//        PrimeNumber.printPrimeCheckResult(num);
+    }
+
+    public static int getIntegerInputFromUser(String msg) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(msg);
+        return sc.nextInt();
     }
 
 }

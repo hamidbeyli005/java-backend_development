@@ -19,11 +19,4 @@ public class EvenNumber {
             }
         }
     }
-
-    public static void printEvenNumbersInRange() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Eded daxil edin: ");
-        int number = sc.nextInt();
-        printEvenNumbers(number);
-    }
 }
