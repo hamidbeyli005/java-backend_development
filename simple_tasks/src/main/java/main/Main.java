@@ -6,6 +6,7 @@ package main;
 import java.util.Scanner;
 import util.EvenNumber;
 import util.NumberConverter;
+import util.NumberDigitSum;
 import util.PrimeNumber;
 
 /**
@@ -16,13 +17,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int num = getIntegerInputFromUser("Eded daxil edin: ");
+        int number = getIntegerInputFromUser("Eded daxil edin: ");
 
 //        NumberConverter.printNumberConversionResult();
-//        EvenNumber.printEvenNumbers(num);
-//        PrimeNumber.printPrimeCheckResult(num);
+//        EvenNumber.printEvenNumbers(number);
+//        PrimeNumber.printPrimeCheckResult(number);
+//        PrimeNumber.findAndPrintPrimes(number);
 
-        PrimeNumber.findAndPrintPrimes(num);
+
+        NumberDigitSum.printSumOfDigits(number);
+
     }
 
     public static int getIntegerInputFromUser(String msg) {
