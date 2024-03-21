@@ -4,13 +4,15 @@
  */
 package util;
 
+import java.util.Scanner;
+
 /**
  *
  * @author hamidhamidbayli
  */
 public class NumberConverter {
 
-    public static String covertNumberToString(int number) {
+    public static String convertNumberToString(int number) {
         if (number < 0 || number > 10000) {
             return "0-10000 arasi eded daxil ede bilersiniz!";
         }
@@ -39,5 +41,13 @@ public class NumberConverter {
             return thousands[fourthStep] + " " + hundreds[thirdStep] + " " + tens[secondStep] + " " + ones[firstStep];
         }
         return "";
+    }
+
+    public static void printNumberConversionResult() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number (between 0 and 10000): ");
+        int number = scanner.nextInt();
+        String result = convertNumberToString(number);
+        System.out.println(result);
     }
 }
