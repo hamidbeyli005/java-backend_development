@@ -4,6 +4,7 @@
 package main;
 
 import java.util.Scanner;
+import util.DigitCounter;
 import util.EvenNumber;
 import util.NumberConverter;
 import util.NumberDigitSum;
@@ -26,7 +27,8 @@ public class Main {
 //        PrimeNumber.printPrimeCheckResult(number);
 //        PrimeNumber.findAndPrintPrimes(number);
 //        NumberDigitSum.printSumOfDigits(number);
-        SwapVariables.swapAndPrintValues(17, 23);
+//        SwapVariables.swapAndPrintValues(17, 23);
+        DigitCounter.printDigitCount(number);
 
     }
 
