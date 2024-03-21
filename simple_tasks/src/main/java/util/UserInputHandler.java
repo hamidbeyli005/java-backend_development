@@ -17,4 +17,9 @@ public class UserInputHandler {
         System.out.println(msg);
         return sc.nextInt();
     }
+    public static String getStringInputFromUser(String msg) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(msg);
+        return sc.nextLine();
+    }
 }

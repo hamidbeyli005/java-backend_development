@@ -10,6 +10,7 @@ import util.FactorialCalculator;
 import util.NumberConverter;
 import util.NumberDigitSum;
 import util.PrimeNumber;
+import util.StringPalindrome;
 import util.SwapVariables;
 import util.UserInputHandler;
 
@@ -21,7 +22,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int number = UserInputHandler.getIntegerInputFromUser("Eded daxil edin: ");
+//        int number = UserInputHandler.getIntegerInputFromUser("Eded daxil edin: ");
 
 //        NumberConverter.printNumberConversionResult();
 //        EvenNumber.printEvenNumbers(number);
@@ -30,9 +31,12 @@ public class Main {
 //        NumberDigitSum.printSumOfDigits(number);
 //        SwapVariables.swapAndPrintValues(17, 23);
 //        DigitCounter.printDigitCount(number);
+//        FactorialCalculator.printFactorialUsingLoop(number);
+//        FactorialCalculator.printFactorialUsingRecursion(number);
 
-        FactorialCalculator.printFactorialUsingLoop(number);
-        FactorialCalculator.printFactorialUsingRecursion(number);
+        String str = UserInputHandler.getStringInputFromUser("String daxil edin: ");
+
+        StringPalindrome.printPalindrome(str);
 
     }
 
