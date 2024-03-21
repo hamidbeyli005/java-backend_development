@@ -8,6 +8,7 @@ import util.EvenNumber;
 import util.NumberConverter;
 import util.NumberDigitSum;
 import util.PrimeNumber;
+import util.UserInputHandler;
 
 /**
  *
@@ -17,7 +18,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int number = getIntegerInputFromUser("Eded daxil edin: ");
+        int number = UserInputHandler.getIntegerInputFromUser("Eded daxil edin: ");
 
 //        NumberConverter.printNumberConversionResult();
 //        EvenNumber.printEvenNumbers(number);
@@ -29,10 +30,5 @@ public class Main {
 
     }
 
-    public static int getIntegerInputFromUser(String msg) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println(msg);
-        return sc.nextInt();
-    }
 
 }
