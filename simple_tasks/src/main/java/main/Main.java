@@ -6,6 +6,7 @@ package main;
 import java.util.Scanner;
 import util.EvenNumber;
 import util.NumberConverter;
+import util.PrimeNumber;
 
 /**
  *
@@ -15,8 +16,9 @@ public class Main {
 
     public static void main(String[] args) {
 //        NumberConverter.printNumberConversionResult();
+//        EvenNumber.printEvenNumbersInRange();
 
-        EvenNumber.printEvenNumbersInRange();
+            PrimeNumber.printPrimeCheckResult();
     }
 
 }
