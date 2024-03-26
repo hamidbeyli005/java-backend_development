@@ -4,6 +4,7 @@
  */
 package main;
 
+import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -13,11 +14,12 @@ import java.io.IOException;
  */
 public class MyFileWriter {
 
-    public static void readFile(String fileName, String text) {
+    public static void writeFile(String fileName, String text) {
         try {
-            FileWriter myWriter = new FileWriter("test.txt");
-            myWriter.write(text);
-            myWriter.close();
+            FileWriter fileWriter = new FileWriter("test.txt");
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write(text);
+            bufferedWriter.close();
         } catch (IOException ex) {
             ex.printStackTrace();
         }

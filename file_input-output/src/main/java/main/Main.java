@@ -11,7 +11,7 @@ public class Main {
     
     public static void main(String[] args) {
 //        FileCreator.createFile("test.txt");
-//        MyFileWriter.readFile("test.txt", "Hello Hamid");
-            MyFileReader.readFile("test.txt");
+        MyFileWriter.writeFile("test.txt", "Hello Hamid2");
+//            MyFileReader.readFile("test.txt");
     }
 }
