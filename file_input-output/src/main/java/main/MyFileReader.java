@@ -9,7 +9,6 @@ package main;
  *
  * @author hamidhamidbayli
  */
-public class FileWriter {
-
+public class MyFileReader {
 
 }

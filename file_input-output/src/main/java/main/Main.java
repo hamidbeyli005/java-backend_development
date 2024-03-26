@@ -10,6 +10,7 @@ package main;
 public class Main {
     
     public static void main(String[] args) {
-        FileCreator.createFile("test.txt");
+//        FileCreator.createFile("test.txt");
+        MyFileWriter.readFile("test.txt", "Hello Hamid");
     }
 }
