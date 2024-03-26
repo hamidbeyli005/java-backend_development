@@ -4,11 +4,29 @@
  */
 package main;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 
 /**
  *
  * @author hamidhamidbayli
  */
 public class MyFileReader {
+
+    public static void readFile(String fileName) {
+        try {
+            FileReader fileReader = new FileReader(fileName);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                System.out.println(line);
+            }
+            bufferedReader.close();
+            fileReader.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 }
