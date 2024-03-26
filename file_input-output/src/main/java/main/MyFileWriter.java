@@ -14,15 +14,23 @@ import java.io.IOException;
  */
 public class MyFileWriter {
 
-    public static void writeFile(String fileName, String text) {
+    public static void writeFile(String fileName, String text, boolean append) {
         try {
-            FileWriter fileWriter = new FileWriter("test.txt");
+            FileWriter fileWriter = new FileWriter(fileName, append);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             bufferedWriter.write(text);
             bufferedWriter.close();
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+    }
+
+    public static void appendFile(String fileName, String text) {
+        writeFile(fileName, text, true);
+    }
+
+    public static void writeFile(String fileName, String text) {
+        writeFile(fileName, text, false);
     }
 
 }
